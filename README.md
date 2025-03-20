@@ -2,6 +2,11 @@
 
 A ComfyUI custom node that simulates Photoshop's "Flatten Image" functionality.
 
+## Support My Work
+If you find this project helpful, consider buying me a coffee:
+
+[![Buy Me A Coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=shmuelronen&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff)](https://buymeacoffee.com/shmuelronen)
+
 ## Description
 
 This node allows you to flatten multiple image layers into a single image, similar to Photoshop's "Flatten Image" command. It takes a batch of images as input and outputs a single flattened image.
