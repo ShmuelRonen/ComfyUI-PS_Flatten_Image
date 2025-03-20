@@ -1,0 +1,246 @@
+{
+  "last_node_id": 63,
+  "last_link_id": 104,
+  "nodes": [
+    {
+      "id": 57,
+      "type": "LoadImage",
+      "pos": [
+        1914.7763671875,
+        3906.61474609375
+      ],
+      "size": [
+        315,
+        314
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            91
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "BymR7rm4F_460_0_2541_1429_0_x-large.jpg",
+        "image"
+      ]
+    },
+    {
+      "id": 62,
+      "type": "FlattenImage",
+      "pos": [
+        2622.99755859375,
+        3907.85595703125
+      ],
+      "size": [
+        210,
+        26
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 100
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            103
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "FlattenImage"
+      },
+      "widgets_values": [],
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 59,
+      "type": "PreviewImage",
+      "pos": [
+        2872.756103515625,
+        3908.628173828125
+      ],
+      "size": [
+        346.43450927734375,
+        268.5097351074219
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 103
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "widgets_values": []
+    },
+    {
+      "id": 63,
+      "type": "PreviewImage",
+      "pos": [
+        2624.24853515625,
+        4013.89306640625
+      ],
+      "size": [
+        202.0874481201172,
+        246
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 104
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 56,
+      "type": "RMBG",
+      "pos": [
+        2273.12109375,
+        3908.01953125
+      ],
+      "size": [
+        288.3451843261719,
+        290
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 91
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            100,
+            104
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        },
+        {
+          "name": "MASK_IMAGE",
+          "type": "IMAGE",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "RMBG"
+      },
+      "widgets_values": [
+        "RMBG-2.0",
+        1,
+        1024,
+        0,
+        0,
+        "Alpha",
+        false,
+        "default",
+        false
+      ]
+    }
+  ],
+  "links": [
+    [
+      91,
+      57,
+      0,
+      56,
+      0,
+      "IMAGE"
+    ],
+    [
+      100,
+      56,
+      0,
+      62,
+      0,
+      "IMAGE"
+    ],
+    [
+      103,
+      62,
+      0,
+      59,
+      0,
+      "IMAGE"
+    ],
+    [
+      104,
+      56,
+      0,
+      63,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 1.2839025177495011,
+      "offset": [
+        -1621.451835310529,
+        -3784.1323290414257
+      ]
+    },
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true,
+    "ue_links": [],
+    "node_versions": {
+      "comfy-core": "0.3.26",
+      "ComfyUI-RMBG": "705ee591fcfe321b7ed4cc65cd376b5689908854"
+    }
+  },
+  "version": 0.4
+}
