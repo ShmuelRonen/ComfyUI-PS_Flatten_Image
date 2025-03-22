@@ -1,0 +1,14 @@
+[project]
+name = "ps_flatten_image"
+description = "A ComfyUI custom node that simulates Photoshop's 'Flatten Image' functionality."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/ShmuelRonen/ComfyUI-PS_Flatten_Image"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-PS_Flatten_Image"
+Icon = ""
